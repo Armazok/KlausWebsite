@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/KlausWebsite/static/css/main.127a6aaa.css",
+    "main.js": "/KlausWebsite/static/js/main.804543e3.js",
+    "static/js/787.28cb0dcd.chunk.js": "/KlausWebsite/static/js/787.28cb0dcd.chunk.js",
+    "static/media/374477bf-12b9-470a-9933-e5dd27b2b57f.pdf": "/KlausWebsite/static/media/374477bf-12b9-470a-9933-e5dd27b2b57f.3b29b49596b126ec1530.pdf",
+    "static/media/about.jpg": "/KlausWebsite/static/media/about.25037666cca34f8f569a.jpg",
+    "static/media/IMG_5747.jpeg": "/KlausWebsite/static/media/IMG_5747.67edff7b1fa450347e14.jpeg",
+    "static/media/IMG_5523.JPG": "/KlausWebsite/static/media/IMG_5523.4b1da23c417fecd2277c.JPG",
+    "static/media/IMG_5529.JPG": "/KlausWebsite/static/media/IMG_5529.0b298aba9b5a42697501.JPG",
+    "static/media/work2.jpg": "/KlausWebsite/static/media/work2.e52a0c2981a6c11ba468.jpg",
+    "static/media/work4.jpg": "/KlausWebsite/static/media/work4.aee985961b648f4df1f2.jpg",
+    "static/media/work5.jpg": "/KlausWebsite/static/media/work5.094ec4a2224db8908873.jpg",
+    "static/media/work1.jpg": "/KlausWebsite/static/media/work1.321b4ae3bf404acdfdc6.jpg",
+    "static/media/work3.jpg": "/KlausWebsite/static/media/work3.135e9065694bc13dc31d.jpg",
+    "index.html": "/KlausWebsite/index.html",
+    "main.127a6aaa.css.map": "/KlausWebsite/static/css/main.127a6aaa.css.map",
+    "main.804543e3.js.map": "/KlausWebsite/static/js/main.804543e3.js.map",
+    "787.28cb0dcd.chunk.js.map": "/KlausWebsite/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.127a6aaa.css",
+    "static/js/main.804543e3.js"
+  ]
+}
