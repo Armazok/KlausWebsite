@@ -38,7 +38,7 @@ export const Contact = memo(({}) => {
                             <h3 className="contact__card-title">Whatsapp</h3>
                             <span className="contact__card-data">+77787330865</span>
 
-                            <a target="_blank" href="https://api.whatsapp.com/send?phone=+77787330865&text=Когда-то давно четыре народа жили в мире, но все изменилось когда народ огня развязал войну, только аватар властелин всех четырех стихий мог остановить%20безжалостные атаки магов огня." className="contact__button">
+                            <a target="_blank" href="https://wa.me/+77787330865?text=Когда-то давно четыре народ жили в мире. Но всё изменилось, когда народ огня развязал войну. Только аватар, властелин всех четырёх стихий, мог остановить захватчиков, но когда мир нуждался в нём больше всего, он исчез." className="contact__button">
                                 Write Me {" "}
                                 <i className="bx bx-up-arrow-alt contact__button-icon"></i></a>
                         </div>
