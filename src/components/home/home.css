@@ -19,7 +19,16 @@
 .home__social-icon {
     font-size: 1.25rem;
     color: var(--title-color);
+    border-radius: 0.5rem;
+    /*height: 30px;*/
+    /*width: 30px;*/
+    /*align-content: center;*/
 }
+
+/* Active link */
+/*.home__social-icon:hover {*/
+/*    background-color: #aba8a8;*/
+/*}*/
 
 
 .home__social-icon:hover {
