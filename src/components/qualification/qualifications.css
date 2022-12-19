@@ -18,7 +18,7 @@
     border-radius: 0.5rem;
 }
 
-/* Active Class */
+/* Active Link */
 .qualification__button:active {
     background-color: var(--title-color);
     color: var(--container-color);
@@ -29,6 +29,8 @@
     color: var(--container-color);
     background-color: var(--title-color);
 }
+
+
 
 .qualification__icon {
     font-size: 1.8rem;

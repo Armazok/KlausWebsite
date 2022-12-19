@@ -49,18 +49,19 @@
 
 
 /* Active link */
-.active__link,
 .nav__link:hover {
-    /*color: yellow;*/
     color: var(--container-color);
     background-color: var(--title-color);
 }
 
 /* Active Work */
-.active-work {
-    background-color: var(--title-color);
+.nav__link:active {
     color: var(--container-color);
+    background-color: var(--title-color);
 }
+
+
+
 
 /* Change Background Header*/
 .scroll-header {
