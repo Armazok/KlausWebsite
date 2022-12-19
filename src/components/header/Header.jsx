@@ -26,7 +26,7 @@ export const Header = memo(({}) => {
                                 to="home"
                                 spy={true}
                                 smooth={true}
-                                offset={-100}
+                                offset={-250}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#home")}
@@ -42,7 +42,7 @@ export const Header = memo(({}) => {
                                 to="about"
                                 spy={true}
                                 smooth={true}
-                                offset={-100}
+                                offset={-250}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#about")}
@@ -58,7 +58,7 @@ export const Header = memo(({}) => {
                                 to="skills"
                                 spy={true}
                                 smooth={true}
-                                offset={-100}
+                                offset={-250}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#skills")}
@@ -73,7 +73,7 @@ export const Header = memo(({}) => {
                                 to="qualification"
                                 spy={true}
                                 smooth={true}
-                                offset={-100}
+                                offset={-250}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#qualification")}
@@ -87,7 +87,7 @@ export const Header = memo(({}) => {
                                 to="portfolio"
                                 spy={true}
                                 smooth={true}
-                                offset={-100}
+                                offset={-250}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#portfolio")}
@@ -101,7 +101,7 @@ export const Header = memo(({}) => {
                                 to="contact"
                                 spy={true}
                                 smooth={true}
-                                offset={-150}
+                                offset={-250}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#contact")}
