@@ -19,13 +19,17 @@
 .nav__toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
-
 }
 
 
 .nav__list {
     display: flex;
     column-gap: 2rem;
+}
+
+.nav__item .active {
+    color: var(--container-color);
+    background-color: var(--title-color);
 }
 
 
@@ -55,10 +59,10 @@
 }
 
 /* Active Work */
-.nav__link:active {
-    color: var(--container-color);
-    background-color: var(--title-color);
-}
+/*.nav__link:active {*/
+/*    color: var(--container-color);*/
+/*    background-color: var(--title-color);*/
+/*}*/
 
 
 

@@ -2,9 +2,8 @@ import React, {memo, useState} from 'react';
 import "./qualifications.css"
 
 export const Qualification = memo(({}) => {
-    const [toggleState, setToggleState] = useState(1)
-    const toggleTab = (index) => setToggleState(index)
-
+    const [toggleState, setToggleState] = useState('education')
+    // const toggleTab = (index) => setToggleState(index)
     return (
         <section className="qualification section" id="qualification">
             <h2 className="section__title">Qualification</h2>
@@ -14,31 +13,31 @@ export const Qualification = memo(({}) => {
             <div className="qualification__container container">
                 <div className="qualification__tabs">
 
-                    <div
+                    <a
                         className={
-                            toggleTab === 1
-                            ? "qualification__button button--flex"
+                            toggleState === 'education'
+                            ? "qualification__button button--flex active-link"
                             : "qualification__button button--flex"}
-                        onClick={() => toggleTab(1)}
+                        onClick={() => setToggleState('education')}
                     >
                         <i className="uil uil-graduation-cap qualification__icon"></i> Education
-                    </div>
+                    </a>
 
-                    <div
+                    <a
                         className={
-                            toggleTab === 2
-                            ? "qualification__button button--flex"
+                            toggleState === 'experience'
+                            ? "qualification__button button--flex active-link"
                             : "qualification__button button--flex"}
-                        onClick={() => toggleTab(2)}
+                        onClick={() => setToggleState('experience')}
                     >
                         <i className="uil uil-briefcase-alt qualification__icon"></i> Experience
-                    </div>
+                    </a>
 
                 </div>
                 <div className="qualification__sections">
 
                     <div
-                        className={toggleState === 1
+                        className={toggleState === 'education'
                             ? "qualification__content qualification__content-active"
                             : "qualification__content"}
                     >
@@ -113,7 +112,7 @@ export const Qualification = memo(({}) => {
 
                     </div>
 
-                    <div className={toggleState === 2
+                    <div className={toggleState === 'experience'
                         ? "qualification__content qualification__content-active"
                         : "qualification__content"}
                     >

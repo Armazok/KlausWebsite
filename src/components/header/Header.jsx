@@ -1,29 +1,31 @@
 import React, {memo, useState} from 'react';
+import {Link} from "react-scroll";
 import './header.css';
 
 export const Header = memo(({}) => {
 
     /*=============== IntersectionObserver ===============*/
-    const section = document.querySelectorAll('.section')
-    const links = document.querySelectorAll('.nav__item')
-    const cb = (entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-                links.forEach(link => link.classList.remove('active'))
-                const activeId = entry.target.id;
-                const activeLink = document.querySelector(
-                    `.nav__item[href ="#${activeId}"]`
-                );
-                if (activeLink) {
-                    activeLink.classList.add('active')
-                }
-            }
-        })
-    };
-    const sectionObserver = new IntersectionObserver(cb, {
-        threshold: [0.2, 0.5, 0.8]
-    });
-    section.forEach(s => sectionObserver.observe(s))
+    // const section = document.querySelectorAll('.selector')
+    // const links = document.querySelectorAll('.nav__item')
+    // const cb = (entries) => {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+    //             links.forEach(link => link.classList.remove('active'))
+    //             console.log(links)
+    //             const activeId = entry.target.id;
+    //             const activeLink = document.querySelector(
+    //                 `.nav__item[href='#${activeId}']`
+    //             );
+    //             if (activeLink) {
+    //                 activeLink.classList.add('active')
+    //             }
+    //         }
+    //     })
+    // };
+    // const sectionObserver = new IntersectionObserver(cb, {
+    //     threshold: [0.2, 0.5, 0.8]
+    // });
+    // section.forEach(s => sectionObserver.observe(s))
 
 
     /*=============== Change Background Header ===============*/
@@ -40,61 +42,97 @@ export const Header = memo(({}) => {
     return (
         <header className='header'>
             <nav className="nav container">
-                <a href="index.html" className="nav__logo">Klaus</a>
+                <Link href="/" className="nav__logo">Klaus</Link>
 
                 <div className={Toggle ? 'nav__menu show-menu' : 'nav__menu'}>
                     <ul className="nav__list grid">
                         <li className="nav__item">
-                            <a href="#home"
-                               onClick={() => setActiveNav("#home")}
-                               className={activeNav === "#home" ? "nav__link active-work " : "nav__link"}
+                            <Link
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration={500}
+
+                                onClick={() => setActiveNav("#home")}
+                                className={activeNav === "#home" ? "nav__link active-work " : "nav__link"}
                             >
                                 <i className="uil uil-estate nav__icon"></i> Home
-                            </a>
+                            </Link>
                         </li>
 
 
                         <li className="nav__item">
-                            <a href="#about"
-                               onClick={() => setActiveNav("#about")}
-                               className={activeNav === "#about" ? "nav__link active-work" : "nav__link"}
+                            <Link
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration={500}
+
+                                onClick={() => setActiveNav("#about")}
+                                className={activeNav === "#about" ? "nav__link active-work" : "nav__link"}
                             >
                                 <i className="uil uil-user nav__icon"></i> About
-                            </a>
+                            </Link>
                         </li>
 
 
                         <li className="nav__item">
-                            <a href="#skills"
-                               onClick={() => setActiveNav("#skills")}
-                               className={activeNav === "#skills" ? "nav__link active-work" : "nav__link"}>
+                            <Link
+                                to="skills"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration={500}
+
+                                onClick={() => setActiveNav("#skills")}
+                                className={activeNav === "#skills" ? "nav__link active-work" : "nav__link"}>
                                 <i className="uil uil-file-alt nav__icon"></i> Skills
-                            </a>
+                            </Link>
                         </li>
 
 
                         <li className="nav__item">
-                            <a href="#qualification"
-                               onClick={() => setActiveNav("#qualification")}
-                               className={activeNav === "#qualification" ? "nav__link active-work" : "nav__link"}>
+                            <Link
+                                to="qualification"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration={500}
+
+                                onClick={() => setActiveNav("#qualification")}
+                                className={activeNav === "#qualification" ? "nav__link active-work" : "nav__link"}>
                                 <i className="uil uil-briefcase-alt nav__icon"></i> Qualification
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="nav__item">
-                            <a href="#portfolio"
-                               onClick={() => setActiveNav("#portfilio")}
-                               className={activeNav === "#portfolio" ? "nav__link active-work" : "nav__link"}>
+                            <Link
+                                to="portfolio"
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration={500}
+
+                                onClick={() => setActiveNav("#portfolio")}
+                                className={activeNav === "#portfolio" ? "nav__link active-work" : "nav__link"}>
                                 <i className="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="nav__item">
-                            <a href="#contact"
-                               onClick={() => setActiveNav("#contact")}
-                               className={activeNav === "#contact" ? "nav__link active-work" : "nav__link"}>
+                            <Link
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-150}
+                                duration={500}
+
+                                onClick={() => setActiveNav("#contact")}
+                                className={activeNav === "#contact" ? "nav__link active-work" : "nav__link"}>
                                 <i className="uil uil-message nav__icon"></i> Contact
-                            </a>
+                            </Link>
                         </li>
                     </ul>
 

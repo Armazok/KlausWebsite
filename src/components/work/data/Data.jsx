@@ -7,14 +7,16 @@ import Work5 from "../../../assets/work5.jpg"
 export const projectsData = [
     {id: 1, image: Work1, title: "Web Design", category: "web", link: 'https://www.google.com/'},
     {id: 2, image: Work2, title: "App Movil", category: "app", link: 'https://www.yandex.com/'},
-    {id: 3, image: Work3, title: "Brand Design", category: "design", link: 'https://www.google.com/'},
+    {id: 3, image: Work3, title: "Brand Design", category: "mobile", link: 'https://www.google.com/'},
     {id: 4, image: Work4, title: "Web Design", category: "web", link: 'https://www.google.com/'},
     {id: 5, image: Work5, title: "IT-INCUBATOR", category: "web", link: 'https://www.google.com/'},
+    {id: 6, image: Work5, title: "IT-INCUBATOR", category: "voice acting", link: 'https://www.google.com/'},
 ];
 
 export const projectsNav = [
     {name: "all"},
     {name: "web"},
     {name: "app"},
-    {name: "design"},
+    {name: "mobile"},
+    {name: "voice acting"}
 ]
