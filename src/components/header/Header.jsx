@@ -30,7 +30,7 @@ export const Header = memo(({}) => {
                                 duration={500}
 
                                 onClick={() => setActiveNav("#home")}
-                                className={activeNav === "#home" ? "nav__link active-work " : "nav__link"}
+                                className={activeNav === "#home" ? "nav__link" : "nav__link"}
                             >
                                 <i className="uil uil-estate nav__icon"></i> Home
                             </Link>
@@ -46,7 +46,7 @@ export const Header = memo(({}) => {
                                 duration={500}
 
                                 onClick={() => setActiveNav("#about")}
-                                className={activeNav === "#about" ? "nav__link active-work" : "nav__link"}
+                                className={activeNav === "#about" ? "nav__link" : "nav__link"}
                             >
                                 <i className="uil uil-user nav__icon"></i> About
                             </Link>
@@ -62,7 +62,7 @@ export const Header = memo(({}) => {
                                 duration={500}
 
                                 onClick={() => setActiveNav("#skills")}
-                                className={activeNav === "#skills" ? "nav__link active-work" : "nav__link"}>
+                                className={activeNav === "#skills" ? "nav__link" : "nav__link"}>
                                 <i className="uil uil-file-alt nav__icon"></i> Skills
                             </Link>
                         </li>
@@ -77,7 +77,7 @@ export const Header = memo(({}) => {
                                 duration={500}
 
                                 onClick={() => setActiveNav("#qualification")}
-                                className={activeNav === "#qualification" ? "nav__link active-work" : "nav__link"}>
+                                className={activeNav === "#qualification" ? "nav__link" : "nav__link"}>
                                 <i className="uil uil-briefcase-alt nav__icon"></i> Qualification
                             </Link>
                         </li>
@@ -91,7 +91,7 @@ export const Header = memo(({}) => {
                                 duration={500}
 
                                 onClick={() => setActiveNav("#portfolio")}
-                                className={activeNav === "#portfolio" ? "nav__link active-work" : "nav__link"}>
+                                className={activeNav === "#portfolio" ? "nav__link" : "nav__link"}>
                                 <i className="uil uil-scenery nav__icon"></i> Portfolio
                             </Link>
                         </li>
@@ -105,7 +105,7 @@ export const Header = memo(({}) => {
                                 duration={500}
 
                                 onClick={() => setActiveNav("#contact")}
-                                className={activeNav === "#contact" ? "nav__link active-work" : "nav__link"}>
+                                className={activeNav === "#contact" ? "nav__link" : "nav__link"}>
                                 <i className="uil uil-message nav__icon"></i> Contact
                             </Link>
                         </li>

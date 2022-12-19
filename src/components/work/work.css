@@ -69,11 +69,11 @@
     transform: translateX(0.25rem);
 }
 
-/* Active Work */
-/*.active-work {*/
-/*    background-color: var(--title-color);*/
-/*    color: var(--container-color);*/
-/*}*/
+ /*Active Work */
+.active-work {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
 
 
 /*=============== BREAKPOINTS ===============*/
