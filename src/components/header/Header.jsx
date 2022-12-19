@@ -3,31 +3,6 @@ import {Link} from "react-scroll";
 import './header.css';
 
 export const Header = memo(({}) => {
-
-    /*=============== IntersectionObserver ===============*/
-    // const section = document.querySelectorAll('.selector')
-    // const links = document.querySelectorAll('.nav__item')
-    // const cb = (entries) => {
-    //     entries.forEach(entry => {
-    //         if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-    //             links.forEach(link => link.classList.remove('active'))
-    //             console.log(links)
-    //             const activeId = entry.target.id;
-    //             const activeLink = document.querySelector(
-    //                 `.nav__item[href='#${activeId}']`
-    //             );
-    //             if (activeLink) {
-    //                 activeLink.classList.add('active')
-    //             }
-    //         }
-    //     })
-    // };
-    // const sectionObserver = new IntersectionObserver(cb, {
-    //     threshold: [0.2, 0.5, 0.8]
-    // });
-    // section.forEach(s => sectionObserver.observe(s))
-
-
     /*=============== Change Background Header ===============*/
     window.addEventListener("scroll", function () {
         const header = document.querySelector(".header");
@@ -42,7 +17,7 @@ export const Header = memo(({}) => {
     return (
         <header className='header'>
             <nav className="nav container">
-                <Link href="/" className="nav__logo">Klaus</Link>
+                <a href="#" className="nav__logo">Klaus</a>
 
                 <div className={Toggle ? 'nav__menu show-menu' : 'nav__menu'}>
                     <ul className="nav__list grid">
