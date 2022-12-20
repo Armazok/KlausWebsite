@@ -58,9 +58,9 @@ export const Data = memo(({}) => {
             <h3 className="home__subtitle">
                 Front-End developer
             </h3>
-            <p className="home__description">
-                Front-end developer
-            </p>
+            {/*<p className="home__description">*/}
+            {/*    Front-end developer*/}
+            {/*</p>*/}
 
             <a href="https://t.me/TutusCatutus" className="button button--flex">
                 Say Hello

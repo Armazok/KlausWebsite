@@ -1,5 +1,6 @@
 import React, {memo, useState} from 'react';
 import {Link} from "react-scroll";
+// import {Link as LinkRouter} from "react-router-dom";
 import './header.css';
 
 export const Header = memo(({}) => {
@@ -21,12 +22,13 @@ export const Header = memo(({}) => {
 
                 <div className={Toggle ? 'nav__menu show-menu' : 'nav__menu'}>
                     <ul className="nav__list grid">
+
                         <li className="nav__item">
                             <Link
                                 to="home"
                                 spy={true}
                                 smooth={true}
-                                offset={-250}
+                                offset={-50}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#home")}
@@ -42,7 +44,7 @@ export const Header = memo(({}) => {
                                 to="about"
                                 spy={true}
                                 smooth={true}
-                                offset={-250}
+                                offset={-50}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#about")}
@@ -58,11 +60,11 @@ export const Header = memo(({}) => {
                                 to="skills"
                                 spy={true}
                                 smooth={true}
-                                offset={-250}
+                                offset={-50}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#skills")}
-                                className={activeNav === "#skills" ? "nav__link" : "nav__link"}>
+                                className={activeNav === "#skills" ? "nav__link " : "nav__link"}>
                                 <i className="uil uil-file-alt nav__icon"></i> Skills
                             </Link>
                         </li>
@@ -73,11 +75,11 @@ export const Header = memo(({}) => {
                                 to="qualification"
                                 spy={true}
                                 smooth={true}
-                                offset={-250}
+                                offset={-50}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#qualification")}
-                                className={activeNav === "#qualification" ? "nav__link" : "nav__link"}>
+                                className={activeNav === "#qualification" ? "nav__link " : "nav__link"}>
                                 <i className="uil uil-briefcase-alt nav__icon"></i> Qualification
                             </Link>
                         </li>
@@ -87,7 +89,7 @@ export const Header = memo(({}) => {
                                 to="portfolio"
                                 spy={true}
                                 smooth={true}
-                                offset={-250}
+                                offset={-10}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#portfolio")}
@@ -101,7 +103,7 @@ export const Header = memo(({}) => {
                                 to="contact"
                                 spy={true}
                                 smooth={true}
-                                offset={-250}
+                                offset={-10}
                                 duration={500}
 
                                 onClick={() => setActiveNav("#contact")}
