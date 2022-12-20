@@ -1,17 +1,36 @@
-import React, { useRef, memo } from 'react';
+import React, {useRef, memo} from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css"
+import {useForm} from "react-hook-form";
 
 export const Contact = memo(({}) => {
     const form = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+
+    const {
+        register,
+        formState: {errors},
+        handleSubmit,
+        reset
+    } = useForm({
+        mode: "all"
+    });
+
+    const onSubmit = (data) => {
+        data.preventDefault();
         emailjs
             .sendForm('service_f9u57yb', 'template_gahom56', form.current, '7MT-UBPoRcfIWwpGo')
-            alert("Message Completed")
-            e.target.reset()
-    };
+        alert('Completed')
+        reset();
+    }
+
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //     emailjs
+    //         .sendForm('service_f9u57yb', 'template_gahom56', form.current, '7MT-UBPoRcfIWwpGo')
+    //         alert("Message Completed")
+    //         e.target.reset()
+    // };
 
     return (
         <section className="contact section" id="contact">
@@ -27,9 +46,10 @@ export const Contact = memo(({}) => {
                             <i className="bx bx-mail-send contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Email</h3>
-                           {/*<span className="contact__card-data">user@gmail.com</span>*/}
+                            {/*<span className="contact__card-data">user@gmail.com</span>*/}
 
-                            <a target="_blank" href="mailto:nikolay.borsin@mail.ru" className="contact__button">Write Me {" "}
+                            <a target="_blank" href="mailto:nikolay.borsin@mail.ru" className="contact__button">Write
+                                Me {" "}
                                 <i className="bx bx-up-arrow-alt contact__button-icon"></i></a>
                         </div>
                         <div className="contact__card">
@@ -38,7 +58,9 @@ export const Contact = memo(({}) => {
                             <h3 className="contact__card-title">Whatsapp</h3>
                             <span className="contact__card-data">+77787330865</span>
 
-                            <a target="_blank" href="https://wa.me/+77787330865?text=Когда-то давно четыре народ жили в мире. Но всё изменилось, когда народ огня развязал войну. Только аватар, властелин всех четырёх стихий, мог остановить захватчиков, но когда мир нуждался в нём больше всего, он исчез." className="contact__button">
+                            <a target="_blank"
+                               href="https://wa.me/+77787330865?text=Когда-то давно четыре народ жили в мире. Но всё изменилось, когда народ огня развязал войну. Только аватар, властелин всех четырёх стихий, мог остановить захватчиков, но когда мир нуждался в нём больше всего, он исчез."
+                               className="contact__button">
                                 Write Me {" "}
                                 <i className="bx bx-up-arrow-alt contact__button-icon"></i></a>
                         </div>
@@ -58,28 +80,61 @@ export const Contact = memo(({}) => {
 
                 <div className="contact__content">
                     <h3 className="contact__title">Write me your project</h3>
-                    <form ref={form} onSubmit={sendEmail} className="contact__form">
+                    <form ref={form} onSubmit={handleSubmit(onSubmit)} className="contact__form">
                         <div className="contact__form-div">
-                            <label  className="contact__form-tag">Name</label>
+                            <label className="contact__form-tag">First Name</label>
+
                             <input
-                                type="text"
-                                name="name"
+                                {...register("firstName", {
+                                    required: "Required field",
+                                    minLength: {
+                                        value: 2,
+                                        message: "Minimum two characters"
+                                    }
+                                })}
+
                                 className="contact__form-input"
                                 placeholder="Insert your name"
                             />
+
                         </div>
+
+
+                        <div style={{height: 40, color: "red"}}>
+                            {errors?.firstName && <p><i className='bx bx-error'></i>{errors?.firstName?.message || "Error!"}</p>}
+                        </div>
+
+
                         <div className="contact__form-div">
-                            <label  className="contact__form-tag">EMail</label>
+                            <label className="contact__form-tag">EMail</label>
+
                             <input
+                                {...register("emailAddress", {
+                                    required: "Required field",
+                                })}
+
                                 type="email"
-                                name="email"
+
                                 className="contact__form-input"
                                 placeholder="Insert your email"
                             />
                         </div>
+
+                        <div style={{height: 40, color: "red"}}>
+                            {errors?.emailAddress && <p><i className='bx bx-error'></i>{errors?.emailAddress?.message || "Error!"}</p>}
+                        </div>
+
                         <div className="contact__form-div contact__form-area">
-                            <label  className="contact__form-tag">Project</label>
+                            <label className="contact__form-tag">Project</label>
                             <textarea
+                                {...register("project", {
+                                    required: "Required field",
+                                    minLength: {
+                                        value: 5,
+                                        message: "Minimum five characters"
+                                    },
+                                })}
+
                                 name="project"
                                 cols="30"
                                 rows="10"
@@ -89,7 +144,12 @@ export const Contact = memo(({}) => {
                             </textarea>
                         </div>
 
-                        <button className="button button--flex">
+                        <div style={{height: 40, color: "red"}}>
+                            {errors?.project && <p><i className='bx bx-error'></i>{errors?.project?.message || "Error!"}</p>}
+                        </div>
+
+                        <button
+                            className="button button--flex">
                             Send Message
                             <svg
                                 className="button__icon"
