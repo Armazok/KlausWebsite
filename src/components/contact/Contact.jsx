@@ -1,12 +1,15 @@
-import React, {useRef, memo} from 'react';
+import React, {useRef, memo, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css"
 import {useForm} from "react-hook-form";
+import {Modal} from "../modalWindow/modal";
+import {LinearProgress} from '@mui/material';
 
 export const Contact = memo(({}) => {
+    const [modalActive, setModalActive] = useState(false)
+    const [loading, setLoading] = useState(false);
+
     const form = useRef();
-
-
     const {
         register,
         formState: {errors},
@@ -17,20 +20,18 @@ export const Contact = memo(({}) => {
     });
 
     const onSubmit = (data) => {
-        data.preventDefault();
+        setLoading(true)
+        // data.preventDefault();
         emailjs
             .sendForm('service_f9u57yb', 'template_gahom56', form.current, '7MT-UBPoRcfIWwpGo')
-        alert('Completed')
-        reset();
+            .then(() => {
+                setModalActive(true)
+                reset();
+            })
+            .finally(() => {
+                setLoading(false)
+            })
     }
-
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-    //     emailjs
-    //         .sendForm('service_f9u57yb', 'template_gahom56', form.current, '7MT-UBPoRcfIWwpGo')
-    //         alert("Message Completed")
-    //         e.target.reset()
-    // };
 
     return (
         <section className="contact section" id="contact">
@@ -48,7 +49,7 @@ export const Contact = memo(({}) => {
                             <h3 className="contact__card-title">Email</h3>
                             {/*<span className="contact__card-data">user@gmail.com</span>*/}
 
-                            <a target="_blank" href="mailto:nikolay.borsin@mail.ru" className="contact__button">Write
+                            <a target="_blank" href="mailto:nikolai.borsin@mail.ru" className="contact__button">Write
                                 Me {" "}
                                 <i className="bx bx-up-arrow-alt contact__button-icon"></i></a>
                         </div>
@@ -101,7 +102,8 @@ export const Contact = memo(({}) => {
 
 
                         <div style={{height: 40, color: "red"}}>
-                            {errors?.firstName && <p><i className='bx bx-error'></i>{errors?.firstName?.message || "Error!"}</p>}
+                            {errors?.firstName &&
+                                <p><i className='bx bx-error'></i>{errors?.firstName?.message || "Error!"}</p>}
                         </div>
 
 
@@ -121,7 +123,8 @@ export const Contact = memo(({}) => {
                         </div>
 
                         <div style={{height: 40, color: "red"}}>
-                            {errors?.emailAddress && <p><i className='bx bx-error'></i>{errors?.emailAddress?.message || "Error!"}</p>}
+                            {errors?.emailAddress &&
+                                <p><i className='bx bx-error'></i>{errors?.emailAddress?.message || "Error!"}</p>}
                         </div>
 
                         <div className="contact__form-div contact__form-area">
@@ -145,8 +148,10 @@ export const Contact = memo(({}) => {
                         </div>
 
                         <div style={{height: 40, color: "red"}}>
-                            {errors?.project && <p><i className='bx bx-error'></i>{errors?.project?.message || "Error!"}</p>}
+                            {errors?.project &&
+                                <p><i className='bx bx-error'></i>{errors?.project?.message || "Error!"}</p>}
                         </div>
+
 
                         <button
                             className="button button--flex">
@@ -169,9 +174,16 @@ export const Contact = memo(({}) => {
                                 ></path>
                             </svg>
                         </button>
+
+
+
                     </form>
                 </div>
             </div>
+            {   loading
+                ? <LinearProgress color="inherit" />
+                : <Modal active={modalActive} setActive={setModalActive}
+                />}
         </section>
     );
 });

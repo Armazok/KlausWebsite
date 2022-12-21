@@ -1,4 +1,4 @@
-import React, {memo, useState} from 'react';
+import React, {memo, useEffect, useState} from 'react';
 import {Link} from "react-scroll";
 // import {Link as LinkRouter} from "react-router-dom";
 import './header.css';
@@ -15,6 +15,11 @@ export const Header = memo(({}) => {
     const [Toggle, showMenu] = useState(false)
     const [activeNav, setActiveNav] = useState("#home")
 
+
+    useEffect(() => {
+        window.location.href = activeNav
+    }, [activeNav])
+
     return (
         <header className='header'>
             <nav className="nav container">
@@ -24,18 +29,19 @@ export const Header = memo(({}) => {
                     <ul className="nav__list grid">
 
                         <li className="nav__item">
-                            <Link
-                                to="home"
-                                spy={true}
-                                smooth={true}
-                                offset={-50}
-                                duration={500}
+                                <Link
+                                    to="home"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={500}
 
-                                onClick={() => setActiveNav("#home")}
-                                className={activeNav === "#home" ? "nav__link" : "nav__link"}
-                            >
-                                <i className="uil uil-estate nav__icon"></i> Home
-                            </Link>
+
+                                    onClick={() => setActiveNav("#home")}
+                                    className={activeNav === "#home" ? "nav__link" : "nav__link"}
+                                >
+                                    <i className="uil uil-estate nav__icon"></i> Home
+                                </Link>
                         </li>
 
 
