@@ -62,7 +62,7 @@ export const Data = memo(({}) => {
             {/*    Front-end developer*/}
             {/*</p>*/}
 
-            <a href="https://t.me/TutusCatutus" className="button button--flex">
+            <a target="_blank" href="https://t.me/TutusCatutus" className="button button--flex">
                 Say Hello
                 <svg
                     className="button__icon"
