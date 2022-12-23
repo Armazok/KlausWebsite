@@ -3,7 +3,7 @@ import React, {memo} from 'react';
 export const Frontend = memo(({}) => {
     return (
         <div className="skills__content">
-            <h3 className="skills__title">Frontend developer</h3>
+            <h3 className="skills__title">Frontend</h3>
             <div className="skills__box">
 
 
@@ -14,7 +14,7 @@ export const Frontend = memo(({}) => {
 
                         <div>
                             <h3 className="skills__name">HTML</h3>
-                            <span className="skills__level">Basic</span>
+                            <span className="skills__level">Advanced</span>
                         </div>
                     </div>
 
@@ -44,16 +44,7 @@ export const Frontend = memo(({}) => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">PHP</h3>
-                            <span className="skills__level">Basic</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className='bx bx-badge-check'></i>
-
-                        <div>
-                            <h3 className="skills__name">Angular</h3>
+                            <h3 className="skills__name">Redux</h3>
                             <span className="skills__level">Advanced</span>
                         </div>
                     </div>
@@ -62,7 +53,16 @@ export const Frontend = memo(({}) => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Redux</h3>
+                            <h3 className="skills__name">JS</h3>
+                            <span className="skills__level">Advanced</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i className='bx bx-badge-check'></i>
+
+                        <div>
+                            <h3 className="skills__name">TS</h3>
                             <span className="skills__level">Advanced</span>
                         </div>
                     </div>
