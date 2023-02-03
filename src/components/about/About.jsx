@@ -17,9 +17,7 @@ export const About = memo(({}) => {
                     <Info/>
 
                     <p className="about__description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book.
+                        I'm an ambitious and result oriented Frontend developer with experience in creating landing pages and SPA, using React, Redux, TypeScript. I am currently improving my skills in this direction and expanding them with new technologies.Open to your suggestions.
                     </p>
                     <a download="" href={CV} className="button button--flex">Download CV
                         <svg
