@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KlausWebsite/static/css/main.14a0514a.css",
-    "main.js": "/KlausWebsite/static/js/main.3ff830fe.js",
+    "main.css": "/KlausWebsite/static/css/main.7799f5ff.css",
+    "main.js": "/KlausWebsite/static/js/main.40e0e3e3.js",
     "static/js/787.28cb0dcd.chunk.js": "/KlausWebsite/static/js/787.28cb0dcd.chunk.js",
     "static/media/CV Frontend-developer.pdf": "/KlausWebsite/static/media/CV Frontend-developer.2cb19e89d80026e0c548.pdf",
     "static/media/IMG_5747.jpeg": "/KlausWebsite/static/media/IMG_5747.67edff7b1fa450347e14.jpeg",
@@ -12,12 +12,12 @@
     "static/media/work1.jpg": "/KlausWebsite/static/media/work1.321b4ae3bf404acdfdc6.jpg",
     "static/media/work3.jpg": "/KlausWebsite/static/media/work3.135e9065694bc13dc31d.jpg",
     "index.html": "/KlausWebsite/index.html",
-    "main.14a0514a.css.map": "/KlausWebsite/static/css/main.14a0514a.css.map",
-    "main.3ff830fe.js.map": "/KlausWebsite/static/js/main.3ff830fe.js.map",
+    "main.7799f5ff.css.map": "/KlausWebsite/static/css/main.7799f5ff.css.map",
+    "main.40e0e3e3.js.map": "/KlausWebsite/static/js/main.40e0e3e3.js.map",
     "787.28cb0dcd.chunk.js.map": "/KlausWebsite/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14a0514a.css",
-    "static/js/main.3ff830fe.js"
+    "static/css/main.7799f5ff.css",
+    "static/js/main.40e0e3e3.js"
   ]
 }
