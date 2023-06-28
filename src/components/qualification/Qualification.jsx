@@ -122,10 +122,10 @@ export const Qualification = memo(({}) => {
 
                             <div>
                                 <h3 className="qualification__title">Frontend Developer</h3>
-                                <span className="qualification__subtitle">Company: Dbrain</span>
+                                <span className="qualification__subtitle">Not available at this time</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calender-alt"></i>
-                                    2021 - 2022
+                                    -- - --
                                 </div>
                             </div>
 

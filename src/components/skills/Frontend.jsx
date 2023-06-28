@@ -22,7 +22,7 @@ export const Frontend = memo(({}) => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">CSS/SCSS</h3>
+                            <h3 className="skills__name">CSS / SCSS</h3>
                             <span className="skills__level">Advanced</span>
                         </div>
                     </div>
@@ -31,7 +31,16 @@ export const Frontend = memo(({}) => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Redux/RTK</h3>
+                            <h3 className="skills__name">Redux / RTK</h3>
+                            <span className="skills__level">Advanced</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i className='bx bx-badge-check'></i>
+
+                        <div>
+                            <h3 className="skills__name">Query / Zustand</h3>
                             <span className="skills__level">Advanced</span>
                         </div>
                     </div>
@@ -53,7 +62,7 @@ export const Frontend = memo(({}) => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">React Native</h3>
+                            <h3 className="skills__name">Next JS</h3>
                             <span className="skills__level">Advanced</span>
                         </div>
                     </div>
@@ -62,7 +71,7 @@ export const Frontend = memo(({}) => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">JS/TS</h3>
+                            <h3 className="skills__name">Tailwind CSS</h3>
                             <span className="skills__level">Advanced</span>
                         </div>
                     </div>
@@ -71,7 +80,7 @@ export const Frontend = memo(({}) => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Axios/REST API</h3>
+                            <h3 className="skills__name">JS / TS</h3>
                             <span className="skills__level">Advanced</span>
                         </div>
                     </div>
@@ -80,7 +89,16 @@ export const Frontend = memo(({}) => {
                         <i className='bx bx-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Material UI</h3>
+                            <h3 className="skills__name">Axios / REST API</h3>
+                            <span className="skills__level">Advanced</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i className='bx bx-badge-check'></i>
+
+                        <div>
+                            <h3 className="skills__name">Material UI <br/> Chakra UI</h3>
                             <span className="skills__level">Advanced</span>
                         </div>
                     </div>
