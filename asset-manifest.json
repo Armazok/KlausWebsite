@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KlausWebsite/static/css/main.5ae3a793.css",
-    "main.js": "/KlausWebsite/static/js/main.2ebe616b.js",
+    "main.js": "/KlausWebsite/static/js/main.18f0968c.js",
     "static/js/787.28cb0dcd.chunk.js": "/KlausWebsite/static/js/787.28cb0dcd.chunk.js",
     "static/media/inc.png": "/KlausWebsite/static/media/inc.43c2e81773917e7a0f43.png",
     "static/media/social.png": "/KlausWebsite/static/media/social.a0213643eab07789ba37.png",
@@ -15,11 +15,11 @@
     "static/media/iman.webp": "/KlausWebsite/static/media/iman.be8055c16c1f1fd8402c.webp",
     "index.html": "/KlausWebsite/index.html",
     "main.5ae3a793.css.map": "/KlausWebsite/static/css/main.5ae3a793.css.map",
-    "main.2ebe616b.js.map": "/KlausWebsite/static/js/main.2ebe616b.js.map",
+    "main.18f0968c.js.map": "/KlausWebsite/static/js/main.18f0968c.js.map",
     "787.28cb0dcd.chunk.js.map": "/KlausWebsite/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ae3a793.css",
-    "static/js/main.2ebe616b.js"
+    "static/js/main.18f0968c.js"
   ]
 }
