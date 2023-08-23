@@ -7,9 +7,9 @@ import Work6 from "../../../assets/dry.webp"
 import Work7 from "../../../assets/iman.webp"
 
 export const projectsData = [
-    {id: 1, image: Work1, title: "Todolists", category: "web", link: 'https://armazok.github.io/TrainingTrello/'},
+    {id: 1, image: Work3, title: "Inctagram", category: "web", link: 'https://inctagram-develop.vercel.app/'},
     {id: 2, image: Work2, title: "Flash Card", category: "web", link: 'https://tkachiko.github.io/flashcards/'},
-    {id: 3, image: Work3, title: "Inctagram", category: "web", link: 'https://inctagram-develop.vercel.app/'},
+    {id: 3, image: Work1, title: "Todolists", category: "web", link: 'https://armazok.github.io/TrainingTrello/'},
     // {id: 4, image: Work4, title: "Social Network", category: "web", link: 'https://armazok.github.io/SocialNetwork/'},
     {id: 5, image: Work5, title: "Jordan Piterson | ChatGPT и рассвет компьютеризированного гипер-интеллекта", category: "KlausVox",
         link: 'https://youtu.be/UmdGraG8afg'},
