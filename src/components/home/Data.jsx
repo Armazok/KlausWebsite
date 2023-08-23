@@ -4,7 +4,7 @@ import React, {memo} from 'react';
 export const Data = memo(({}) => {
     return (
         <div className='home__data'>
-            <h1 className="home__title">Klaus Borza
+            <h1 className="home__title">Borsin Nikolay
                 <svg
                     width="36"
                     height="36"
