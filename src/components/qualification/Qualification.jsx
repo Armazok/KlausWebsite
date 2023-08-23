@@ -16,8 +16,8 @@ export const Qualification = memo(({}) => {
                     <a
                         className={
                             toggleState === 'education'
-                            ? "qualification__button button--flex active-link"
-                            : "qualification__button button--flex"}
+                                ? "qualification__button button--flex active-link"
+                                : "qualification__button button--flex"}
                         onClick={() => setToggleState('education')}
                     >
                         <i className="uil uil-graduation-cap qualification__icon"></i> Education
@@ -26,8 +26,8 @@ export const Qualification = memo(({}) => {
                     <a
                         className={
                             toggleState === 'experience'
-                            ? "qualification__button button--flex active-link"
-                            : "qualification__button button--flex"}
+                                ? "qualification__button button--flex active-link"
+                                : "qualification__button button--flex"}
                         onClick={() => setToggleState('experience')}
                     >
                         <i className="uil uil-briefcase-alt qualification__icon"></i> Experience
@@ -134,7 +134,8 @@ export const Qualification = memo(({}) => {
                                 <span className="qualification__line"></span>
                             </div>
 
-                        {/*</div>*/}
+
+                        </div>
                         {/*<div className="qualification__data">*/}
                         {/*    <div></div>*/}
 
@@ -163,12 +164,12 @@ export const Qualification = memo(({}) => {
                         {/*        </div>*/}
                         {/*    </div>*/}
 
-                            {/*<div>*/}
-                            {/*    <span className="qualification__rounder"></span>*/}
-                            {/*    <span className="qualification__line"></span>*/}
-                            {/*</div>*/}
+                        {/*    <div>*/}
+                        {/*        <span className="qualification__rounder"></span>*/}
+                        {/*        <span className="qualification__line"></span>*/}
+                        {/*    </div>*/}
 
-                        </div>
+                        {/*</div>*/}
 
                     </div>
 

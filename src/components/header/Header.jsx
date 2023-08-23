@@ -76,19 +76,19 @@ export const Header = memo(({}) => {
                         </li>
 
 
-                        <li className="nav__item">
-                            <Link
-                                to="qualification"
-                                spy={true}
-                                smooth={true}
-                                offset={-50}
-                                duration={500}
+                        {/*<li className="nav__item">*/}
+                        {/*    <Link*/}
+                        {/*        to="qualification"*/}
+                        {/*        spy={true}*/}
+                        {/*        smooth={true}*/}
+                        {/*        offset={-50}*/}
+                        {/*        duration={500}*/}
 
-                                onClick={() => setActiveNav("#qualification")}
-                                className={activeNav === "#qualification" ? "nav__link " : "nav__link"}>
-                                <i className="uil uil-briefcase-alt nav__icon"></i> Qualification
-                            </Link>
-                        </li>
+                        {/*        onClick={() => setActiveNav("#qualification")}*/}
+                        {/*        className={activeNav === "#qualification" ? "nav__link " : "nav__link"}>*/}
+                        {/*        <i className="uil uil-briefcase-alt nav__icon"></i> Qualification*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
 
                         <li className="nav__item">
                             <Link
