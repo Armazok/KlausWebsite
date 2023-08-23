@@ -10,7 +10,7 @@ export const projectsData = [
     {id: 1, image: Work1, title: "Todolists", category: "web", link: 'https://armazok.github.io/TrainingTrello/'},
     {id: 2, image: Work2, title: "Flash Card", category: "web", link: 'https://tkachiko.github.io/flashcards/'},
     {id: 3, image: Work3, title: "Inctagram", category: "web", link: 'https://inctagram-develop.vercel.app/'},
-    {id: 4, image: Work4, title: "Social Network", category: "web", link: 'https://armazok.github.io/SocialNetwork/'},
+    // {id: 4, image: Work4, title: "Social Network", category: "web", link: 'https://armazok.github.io/SocialNetwork/'},
     {id: 5, image: Work5, title: "Jordan Piterson | ChatGPT и рассвет компьютеризированного гипер-интеллекта", category: "KlausVox",
         link: 'https://youtu.be/UmdGraG8afg'},
     {id: 6, image: Work6, title: "Dry Creek Wrangler School | Когда у тебя просто не все на своих местах", category: "KlausVox",
