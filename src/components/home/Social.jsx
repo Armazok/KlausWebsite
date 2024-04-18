@@ -7,12 +7,12 @@ export const Social = memo(({}) => {
             <a href="https://instagram.com/nikolayborsin" className="home__social-icon" target='_blank'>
                 <i className="uil uil-instagram"></i>
             </a>
-            {/*<a href="https://www.linkedin.com/in/nikolay-borsin/" className="home__social-icon" target='_blank'>*/}
-            {/*    <i className="uil uil-linkedin"></i>*/}
-            {/*</a>*/}
-            <a href="https://twitter.com/SokoladF" className="home__social-icon" target='_blank'>
-                <i className="uil uil-twitter"></i>
+            <a href="https://www.linkedin.com/in/nikolay-borsin/" className="home__social-icon" target='_blank'>
+                <i className="uil uil-linkedin"></i>
             </a>
+            {/*<a href="https://twitter.com/SokoladF" className="home__social-icon" target='_blank'>*/}
+            {/*    <i className="uil uil-twitter"></i>*/}
+            {/*</a>*/}
             <a href="https://github.com/Armazok" className="home__social-icon" target='_blank'>
                 <i className="uil uil-github"></i>
             </a>
