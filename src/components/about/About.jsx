@@ -1,7 +1,7 @@
 import React, {memo} from 'react';
 import "./about.css"
 import AboutImgMe2 from "../../assets/IMG_5529.JPG"
-import CV from "../../assets/CV Frontend-developer.pdf"
+import CV from "../../assets/BorsinNikolayCVFrontend.pdf"
 import {Info} from "./info";
 
 
