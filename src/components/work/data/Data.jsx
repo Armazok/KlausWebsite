@@ -21,8 +21,8 @@ export const projectsData = [
     {id: 7, image: Work7, title: "Иман Гаджи | 3 книги, которые сделали меня миллионером в 18 лет", category: "KlausVox",
         link: 'https://youtu.be/mW7xY1x2k9g'},
 
-    {id: 8, image: Work8, title: "Doggie", category: "Marcup",
-        link: 'https://marcup-doggie.vercel.app/'},
+    // {id: 8, image: Work8, title: "Doggie", category: "Marcup",
+    //     link: 'https://marcup-doggie.vercel.app/'},
 
     {id: 9, image: Work9, title: "Healthy-Food", category: "Marcup",
         link: 'https://marcup-healthy-food.vercel.app/'},
